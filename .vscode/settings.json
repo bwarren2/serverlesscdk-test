@@ -1,0 +1,6 @@
+{
+    "python.formatting.provider": "black",
+    "python.autoComplete.extraPaths": [
+        "${workspaceFolder}/.env/lib/python3.7/site-packages"
+    ]
+}
