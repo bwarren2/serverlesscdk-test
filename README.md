@@ -10,7 +10,8 @@ Adding the local env installs for autocompletes: very important.  Looks like
     "python.autoComplete.extraPaths": [
         "${workspaceFolder}/.env/lib/python3.7/site-packages"
     ]
-``` in `.vscode`.
+```
+in `.vscode`.
 
 A new cloudwatch group is spawned per deployment, ie you need to cycle through groups to keep up with changes.  You do get print debugging that way, though.
 
