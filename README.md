@@ -1,4 +1,22 @@
 
+# Note
+
+This is a python implementation of the tutorial project [here](https://docs.aws.amazon.com/cdk/latest/guide/serverless_example.html).  Currently it is broken; I need to fix the non-base-GET handlers.
+
+Things learned:
+
+Adding the local env installs for autocompletes: very important.  Looks like
+```
+    "python.autoComplete.extraPaths": [
+        "${workspaceFolder}/.env/lib/python3.7/site-packages"
+    ]
+``` in `.vscode`.
+
+A new cloudwatch group is spawned per deployment, ie you need to cycle through groups to keep up with changes.  You do get print debugging that way, though.
+
+Wish I knew of a better way to test; might just need to declare some mock objects.  It feels like there should be a library for this?
+
+
 # Welcome to your CDK Python project!
 
 This is a blank project for Python development with CDK.
